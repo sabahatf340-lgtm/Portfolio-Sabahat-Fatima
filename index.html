@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabahat Fatima | Personal Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Interactive Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#hero" class="logo">
+                <span class="logo-badge">SF</span>
+                <span class="logo-text">Sabahat Fatima</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="assets/Sabahat_Fatima_CV.pdf" class="btn-cv" target="_blank">
+                    <i class="fas fa-file-download"></i> Download CV
+                </a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content reveal-left">
+                <div class="badge-tag">
+                    <i class="fas fa-graduation-cap"></i> GCWUF &bull; D4WEE Training Program
+                </div>
+                <h1>Hi, I'm <span class="gradient-text">Sabahat Fatima</span></h1>
+                <h2 class="typing-container">
+                    I build <span class="typing-text" id="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="hero-bio">
+                    Web Development &amp; Data Analytics scholar translating Figma wireframes into production-ready digital solutions with interactive designs and smooth animations.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary glow-btn">
+                        <span>View Projects</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Contact Me</span> <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Picture from assets folder -->
+            <div class="hero-img-wrapper reveal-right">
+                <div class="avatar-glow"></div>
+                <div class="avatar-card tilt-card" style="padding: 0; overflow: hidden;">
+                    <img src="assets/sabahat.jpg" alt="Sabahat Fatima Profile Photo" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-html5"></i> <span>HTML5 / CSS3</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-chart-line"></i> <span>Data Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="section-title reveal">
+            <h2>About <span>Me</span></h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal-left">
+                <h3>Bridging Academic Excellence with Cutting-Edge Web Tech</h3>
+                <p>
+                    I am an enthusiastic Web Development and Data Analytics student at Government College Women University Faisalabad (GCWUF)[cite: 1]. Through the D4WEE Project (collaborative initiative with UN Women &amp; Karvan)[cite: 1], I specialize in converting user-focused UI/UX wireframes into responsive websites.
+                </p>
+                <p>
+                    My goal is to construct pixel-perfect websites that combine clean manual code structure with clean visual aesthetics.
+                </p>
+                
+                <!-- Stat Counters -->
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+                        <p>Manual Code Fidelity</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="6">0</span><span class="stat-plus">+</span>
+                        <p>Core Web Toolkit</p>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+                        <p>Responsive Layouts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card-wrapper reveal-right">
+                <div class="glass-card main-info-card tilt-card">
+                    <div class="card-header">
+                        <i class="fas fa-award icon-gold"></i>
+                        <h4>Education &amp; Training</h4>
+                    </div>
+                    <ul class="info-list">
+                        <li>
+                            <strong>Institution:</strong> GCWUF (Government College Women University Faisalabad)[cite: 1]
+                        </li>
+                        <li>
+                            <strong>Program Track:</strong> Web Development &amp; Data Analytics (Tier 2)[cite: 1]
+                        </li>
+                        <li>
+                            <strong>Partnership:</strong> UN Women &amp; Karvan (D4WEE Project)[cite: 1]
+                        </li>
+                        <li>
+                            <strong>Location:</strong> Faisalabad, Pakistan
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-title reveal">
+            <h2>Technical <span>Toolkit</span></h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Key tools &amp; frameworks I use to bring ideas to life</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card tilt-card reveal" data-delay="100">
+                <div class="skill-icon color-html"><i class="fab fa-html5"></i></div>
+                <h3>HTML5</h3>
+                <p>Semantic markup, clean layout structure &amp; accessibility</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card reveal" data-delay="200">
+                <div class="skill-icon color-css"><i class="fab fa-css3-alt"></i></div>
+                <h3>CSS3 / Animations</h3>
+                <p>Flexbox, Grid layout, Keyframes &amp; Glassmorphism</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card reveal" data-delay="300">
+                <div class="skill-icon color-js"><i class="fab fa-js"></i></div>
+                <h3>JavaScript (ES6+)</h3>
+                <p>DOM manipulation, event listeners &amp; interactive UI logic</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card reveal" data-delay="400">
+                <div class="skill-icon color-git"><i class="fab fa-git-alt"></i></div>
+                <h3>Git &amp; GitHub</h3>
+                <p>Version control, branch management &amp; GitHub Pages deploy</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card reveal" data-delay="500">
+                <div class="skill-icon color-analytics"><i class="fas fa-chart-pie"></i></div>
+                <h3>Data Analytics</h3>
+                <p>Data visualization, metrics reporting &amp; insights gathering</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="skill-card tilt-card reveal" data-delay="600">
+                <div class="skill-icon color-sheets"><i class="fas fa-table"></i></div>
+                <h3>Google Sheets</h3>
+                <p>Formula modeling, dynamic data structuring &amp; charts</p>
+                <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-title reveal">
+            <h2>Featured <span>Projects</span></h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Real-world applications translating Figma concepts to live code</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 with image from assets -->
+            <div class="project-card tilt-card reveal-left">
+                <div class="project-img-box">
+                    <img src="assets/project1.jpg" alt="Landing Page Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="project-overlay">
+                        <span class="badge">Live Web App</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Responsive Product Landing Page</h3>
+                    <p>High-converting landing page converted from visual mockup to manual HTML/CSS code with smooth scrolling &amp; mobile nav.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS Grid</span>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="p-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="p-btn p-btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 with image from assets -->
+            <div class="project-card tilt-card reveal-right">
+                <div class="project-img-box">
+                    <img src="assets/project2.jpg" alt="Data Dashboard Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="project-overlay">
+                        <span class="badge">Analytics Dashboard</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Interactive Data Dashboard</h3>
+                    <p>Clean dashboard interface organizing business key performance indicators, spreadsheet charts, and data analytics highlights.</p>
+                    <div class="project-tags">
+                        <span>Data Viz</span>
+                        <span>Google Sheets</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="p-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="p-btn p-btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-title reveal">
+            <h2>Get In <span>Touch</span></h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Have a question or collaboration opportunity? Send a message!</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info reveal-left">
+                <div class="info-box">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>Email Me</h4>
+                        <p>sabahat.fatima@example.com</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>Campus Location</h4>
+                        <p>GCWUF, Faisalabad, Pakistan</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-icon"><i class="fas fa-user-check"></i></div>
+                    <div>
+                        <h4>Status</h4>
+                        <p>Available for Tech &amp; Analytics Projects</p>
+                    </div>
+                </div>
+
+                <div class="social-wrapper">
+                    <h4>Connect on Social</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:sabahat.fatima@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper reveal-right">
+                <form id="contact-form" class="glass-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="e.g., Ayesha Mansoor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="e.g., name@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary glow-btn submit-btn">
+                        <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <strong>Sabahat Fatima</strong>. All Rights Reserved.</p>
+            <p class="footer-credits">
+                Designed &amp; Coded with <i class="fas fa-heart icon-red"></i> for D4WEE Training Program (GCWUF)[cite: 1]
+            </p>
+        </div>
+    </footer>
+
+    <!-- CV Modal -->
+    <div class="modal-overlay" id="cv-modal">
+        <div class="modal-card">
+            <button class="close-modal" id="close-cv-btn">&times;</button>
+            <div class="modal-header">
+                <i class="fas fa-file-pdf icon-red"></i>
+                <h3>Sabahat Fatima - Resume</h3>
+            </div>
+            <div class="modal-body">
+                <p>Download the full Curriculum Vitae (CV) PDF file below:</p>
+                <div class="cv-preview-box">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Sabahat_Fatima_CV.pdf</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="assets/Sabahat_Fatima_CV.pdf" download class="btn btn-primary glow-btn" id="download-confirm-btn">
+                    <i class="fas fa-download"></i> Download File
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-message">
+        <i class="fas fa-check-circle"></i> <span id="toast-text">Message sent successfully!</span>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
